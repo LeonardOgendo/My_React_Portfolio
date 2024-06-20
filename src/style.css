@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.video-background
+{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+}
+#background-video
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.gradient-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(128, 128, 128), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.nav-bar
+{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 65px;
+}
+
+.nav-bar ul li
+{
+    display: inline-block;
+    margin-right: 35px;
+}
+.nav-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+#name-pref
+{
+    color: #fd4312;
+    font-weight: 1000;
+    font-size: 35px;
+}
+#cont
+{
+    font-size: 35px;
+    width: 400px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.Developer-brf
+{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+.Developer-brf h1
+{
+    color: #fff;
+    font-size: 35px;
+}
+
+.header-btns
+{
+    margin-left: 115px;
+    margin-top: 40px;
+    display: flex;
+}
+#view-work-btn
+{
+    background: #fd4312;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+#hire-me-btn
+{
+    background: #fd4312;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+/*--typewriter effect--*/
+
+.icon--home
+{
+    color: #fd4312;
+    font-size: 15px;
+    margin-right: 4px;
+}
+.about-me
+{
+    min-height: 70vh;
+    width: 80%;
+    margin: 50px auto;
+}
+.about-me h2
+{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.about-me p
+{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.about--flexbox
+{
+    display: flex;
+    margin-top: 70px;
+}
+#profile
+{
+    width: 85%;
+    filter: grayscale(110%);
+    border: 2px solid #777;
+    padding: 10px;
+    margin-left: 20px;
+}
+.box1, .box2
+{
+    flex-basis: 50%;
+}
+.box2
+{
+    margin-top: 15px;
+}
+.box2 >p
+{
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 14px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+#about--hello
+{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+#about--name
+{
+    color: #fd4312;
+    font-weight: bold;
+    font-size: 25px;
+}
+.about--details
+{
+    display: flex;
+}
+.det-1
+{
+    margin-right: 60px;
+}
+.dets
+{
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.dets2
+{
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    margin-top: 4px;
+}
+#cv-download-btn
+{
+    background: #fd4312;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+#about--brief::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #fd4312;
+    left: 45%;
+    margin-top: 40px;
+}
