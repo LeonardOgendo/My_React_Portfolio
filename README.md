@@ -1,8 +1,8 @@
-# 🚀 My React Portfolio
+## 🚀 My React Portfolio
 
 A personal portfolio website built with React to showcase my projects, skills, and contact information.
 
-## 🌟 Features
+### 🌟 Features
 
 - Interactive UI with React
 - Responsive design
@@ -10,7 +10,7 @@ A personal portfolio website built with React to showcase my projects, skills, a
 - Projects section with GitHub links
 - Contact form
 
-## 🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 - React.js
 - CSS
