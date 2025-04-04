@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../style.css';
+import '../styles.css';
 
 function TypewriterEffect ({ texts, speed=100, pause=1500 }){
     const [displayedText, setDisplayedText] = useState('');

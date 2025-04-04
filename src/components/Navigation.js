@@ -1,5 +1,4 @@
 import React from "react";
-import '../style.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCogs, faUser, faFileAlt, faPhone, faLaptopCode, faStar } from "@fortawesome/free-solid-svg-icons";
 import TypewriterEffect from "./TypewriterEffect";
