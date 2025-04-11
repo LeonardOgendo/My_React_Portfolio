@@ -127,7 +127,7 @@
 .about-me h2
 {
     text-align: center;
-    font-size: 35px;
+    font-size: 2.15rem;
     margin-bottom: 15px;
 }
 .about-me p
@@ -228,6 +228,19 @@
 .skills-section {
     width: 80%;
     margin: 32px auto;
+
+    & > h2 {
+        margin-left: 22px;
+        font-size: 2.15rem;
+    }
+    & .skills-intro {
+        color: #ccc;
+        font-size: 1rem;
+        margin: 10px 0 20px 0;
+        max-width: 600px;
+        margin-left: 22px;
+    }
+    
 }
 
 .skills-grid {
@@ -235,6 +248,7 @@
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
+    margin-top: 35px;
 }
 
 .skill-card {
@@ -246,6 +260,7 @@
     text-align: center;
     color: white;
     transition: transform 0.3s ease;
+    height: 160px;
 }
 
 .skill-card:hover {
@@ -254,17 +269,121 @@
 }
 
 .skill-icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    margin-bottom: 5px;
     color: #fd4312;
 }
 
 .skill-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 .skill-desc {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #ccc;
 }
+
+
+/*-- Tech Stack section --*/
+.tech-toolbox {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  
+  .tech-toolbox > h2 {
+    margin-left: 22px;
+    font-size: 2.15rem;
+  }
+  
+  .stack-intro {
+    margin: 10px 0 20px 22px;
+    color: #ccc;
+    font-size: 0.95rem;
+  }
+  
+
+  .tab-wrapper {
+    margin: 0 22px;
+    border: 1px solid #fd4312;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #222;
+    margin-top: 40px;
+  }
+  
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    
+
+  }
+
+  .tab-button {
+    border:none;
+    padding: 0.7rem 1.2rem;
+    background-color: #333;
+    color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    
+  }
+  
+  .tab-button:hover {
+    background-color: #444;
+
+  }
+  
+  .tab-button.active {
+    background-color: #222; 
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .tab-content {
+    background-color: #222;
+    padding: 1.5rem 1rem;
+  }
+  
+  
+  .tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+
+  .tech-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #1c1c1c;
+  }
+  
+  .tech-card:hover {
+    transform: scale(1.05);
+    border-color: #fd4312;
+    border-bottom: none;
+  }
+  
+  .tech-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #fd4312;
+  }
+  
+  .tech-name {
+    color: #ccc;
+    font-size: 0.9rem;
+  }
+  
