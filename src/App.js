@@ -5,6 +5,9 @@ import Navigation from "./components/Navigation";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 import TechStack from "./components/TechStack";
+import MyProjects from "./components/MyProjects";
+import MyCertifications from "./components/MyCertifications";
+import Contact from "./components/Contact";
 
 function App(){
     return(
@@ -14,6 +17,9 @@ function App(){
                 <AboutMe />
                 <Skills />
                 <TechStack />
+                <MyProjects />
+                <MyCertifications />
+                <Contact />
             </div>
             
         </div>
