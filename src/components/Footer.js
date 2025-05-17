@@ -1,0 +1,12 @@
+import { FaReact } from "react-icons/fa"
+
+const Footer = () => {
+    return (
+        <div className="footer">
+            <p><span style={{ color: '#fff', fontSize: '0.8rem', letterSpacing: '0.5px' }}>Powered by</span> <FaReact className="react-icon"/><span style={{ color: '#c2c2c2', fontSize: '1.25rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>React</span></p>
+            <p><span style={{ color: '#fff', fontSize: '0.8rem' }}>Developed by</span> <span style={{ color: '#f24312', fontSize: '1rem', fontWeight: 'bold', letterSpacing: '0.5px' }}>Leonard Ogendo</span></p>
+        </div>
+    )
+};
+
+export default Footer;

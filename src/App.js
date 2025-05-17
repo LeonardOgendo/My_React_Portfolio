@@ -8,6 +8,7 @@ import TechStack from "./components/TechStack";
 import MyProjects from "./components/MyProjects";
 import MyCertifications from "./components/MyCertifications";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App(){
     return(
@@ -20,6 +21,7 @@ function App(){
                 <MyProjects />
                 <MyCertifications />
                 <Contact />
+                <Footer />
             </div>
             
         </div>

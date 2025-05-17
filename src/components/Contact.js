@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import ImageSlider from "./ImageSlider";
+import { FaEnvelope, FaLinkedin, FaTwitter, FaXTwitter } from 'react-icons/fa';
 
 const Contact = () => {
   const form = useRef();
@@ -30,7 +32,13 @@ const Contact = () => {
 
       <div className="contact-row">
         <div className="contact-box1">
-            <p>... in design</p>
+            <ImageSlider />
+
+            <div className="social">
+              <p>Or directly on: </p>
+              <a href="#"><FaLinkedin /></a>
+              <a href="#"><FaTwitter /></a>
+            </div>
         </div>
         <form ref={form} onSubmit={sendEmail} className="contact-form">
             <input type="text" name="user_name" placeholder="Your Name" required />
