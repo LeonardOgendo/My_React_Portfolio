@@ -31,14 +31,14 @@ const projects = [
       title: "Betting Model App",
       stack: ['In design'],
       description: "A machine learning-powered platform for football prediction and analytics.",
-      image: "/images/betting-model.jpg",
+      image: "bettin_model.jpeg",
       link: "#"
     },
     {
       title: "Portfolio Website",
       stack: ["React", "CSS"],
       description: "This personal portfolio showcasing my development skills, projects, and more.",
-      image: "/images/portfolio.jpg",
+      image: "portfolio.png",
       link: "https://github.com/YourUsername/portfolio"
     }
   ];
