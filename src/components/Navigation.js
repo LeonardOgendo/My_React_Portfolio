@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faCogs, faUser, faFileAlt, faPhone, faLaptopCode, faStar, faUserShield } from "@fortawesome/free-solid-svg-icons";
 import TypewriterEffect from "./TypewriterEffect";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 
 function Navigation(){
@@ -49,8 +48,8 @@ function Navigation(){
                     <h1>I Am <span id="cont"><TypewriterEffect texts={texts} speed={100} pause={1500} /></span></h1>
                 </div>
                 <div className="header-btns">
-                    <button id="view-work-btn">View Work</button>
-                    <button id="hire-me-btn">Hire Me</button>
+                    <a href="#projects"><button id="view-work-btn">View Work</button></a>
+                    <a href="#contact"><button id="hire-me-btn">Hire Me</button></a>
                 </div>
             </div>
             <div className="nav-bar">
@@ -74,9 +73,9 @@ function Navigation(){
                     </a>
                     </li>
                     <li>
-                    <a href="#resume" className="nav-link">
+                    <a href="#tech-stack" className="nav-link">
                         <div className="ico-box"><FontAwesomeIcon icon={faFileAlt} id="fa-ico-resume" className="fa-ico" /></div>
-                        <div className="name-box"><span>Resume</span></div>
+                        <div className="name-box"><span>Skills</span></div>
                     </a>
                     </li>
                     <li>
@@ -86,17 +85,18 @@ function Navigation(){
                     </a>
                     </li>
                     <li>
+                    <a href="#certifications" className="nav-link">
+                        <div className="ico-box"><FontAwesomeIcon icon={faStar} className="fa-ico" /></div>
+                        <div className="name-box"><span>Certificates</span></div>
+                    </a>
+                    </li>
+                    <li>
                     <a href="#contact" className="nav-link">
                         <div className="ico-box"><FontAwesomeIcon icon={faPhone} className="fa-ico" /></div>
                         <div className="name-box"><span>Contact</span></div>
                     </a>
                     </li>
-                    <li>
-                    <a href="#reviews" className="nav-link">
-                        <div className="ico-box"><FontAwesomeIcon icon={faStar} className="fa-ico" /></div>
-                        <div className="name-box"><span>Reviews</span></div>
-                    </a>
-                    </li>
+                    
                 </ul>
             </div>
 

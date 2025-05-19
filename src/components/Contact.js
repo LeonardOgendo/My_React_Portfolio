@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <h2><span style={{ color: '#fff' }}>Contact</span> <span style={{ color: '#fd4312' }}>Me</span></h2>
 
       <div className="contact-row">

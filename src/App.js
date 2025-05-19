@@ -3,10 +3,10 @@ import './App.css';
 import './styles.css';
 import Navigation from "./components/Navigation";
 import AboutMe from "./components/AboutMe";
-import Skills from "./components/Skills";
+import MyServices from "./components/MyServices";
 import TechStack from "./components/TechStack";
 import MyProjects from "./components/MyProjects";
-import MyCertifications from "./components/MyCertifications";
+import MyCertificates from "./components/MyCertificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -16,10 +16,10 @@ function App(){
             <Navigation />
             <div className="grey-body">
                 <AboutMe />
-                <Skills />
+                <MyServices />
                 <TechStack />
                 <MyProjects />
-                <MyCertifications />
+                <MyCertificates />
                 <Contact />
                 <Footer />
             </div>

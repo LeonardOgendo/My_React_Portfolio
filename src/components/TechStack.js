@@ -55,7 +55,7 @@ const TechStack = () => {
   const [activeTab, setActiveTab] = useState("Code Arsenal");
 
   return (
-    <div className="section-body">
+    <div className="section-body" id="tech-stack">
       <h2 className='section-title'>
         <span style={{ color: '#fff' }}>My Tech</span> <span style={{ color: '#fd4312' }}>Toolbox</span>
       </h2>

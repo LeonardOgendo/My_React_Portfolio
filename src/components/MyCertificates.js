@@ -2,13 +2,13 @@ import React from "react";
 
 const certificates = [
   {
-    title: "Networking Academy Learn-A-Thon 2025",
+    title: "Learn-A-Thon 2025",
     issuer: "Cisco",
     issuerLogo: "cisco_logo.png",
     date: "Feb 2025",
     image: 'participation_netacad.png',
-    link: "#", 
-    skills: ["Ethical Hacking", "Penetration Testing", "Cybersecurity"],
+    link: "https://www.credly.com/badges/4468d385-145e-405d-99fb-128d35af3f91/linked_in_profile", 
+    skills: ["Ethical Hacking", "Cybersecurity", "Penetration Testing"],
   },
   {
     title: "Ethical Hacker",
@@ -16,8 +16,10 @@ const certificates = [
     issuerLogo: "cisco_logo.png",
     date: "Jan 2025",
     image: 'cisco_eh_acad.jpg',
-    link: "#", // Replace with actual credential URL
-    skills: ["Ethical Hacking", "Cybersecurity"],
+    link: "https://www.credly.com/badges/89d6adaa-25a9-4475-9a93-a9b10acbc8b9/linked_in_profile",
+    skills: ["Ethical Hacking", "PenTesting", "Vulnerability Assessment", "Vulnerability Scanning", "Exploitation",
+      "Social Engineering", "Reporting"
+     ],
   },
   {
     title: "Responsive Web Design",
@@ -25,15 +27,15 @@ const certificates = [
     issuerLogo: "freecodecamp_logo.png",
     date: "Jul 2024",
     image: 'freecode_web_cert.png',
-    link: "#", // Replace with actual credential URL
-    skills: ["Responsive Web Design", "JavaScript", "CSS3", "HTML5", "Frontend Development"],
+    link: "https://www.freecodecamp.org/certification/Leonard101/responsive-web-design", 
+    skills: ["Responsive Web Design", "JavaScript", "HTML5", "Frontend Development", "CSS3"],
   },
 ];
 
-const MyCertifications = () => {
+const MyCertificates = () => {
   return (
     <section className="section-body" id="certifications">
-        <h2 className="section-title"><span style={{ color: "#fff" }}>My</span> <span style={{color:'#fd4312'}}>Certifications</span></h2>
+        <h2 className="section-title"><span style={{ color: "#fff" }}>My</span> <span style={{color:'#fd4312'}}>Certificates</span></h2>
         <p className="section-intro">
           Each line of code crafted with precision—these projects embody my skillset and creativity in web development.
         </p>
@@ -41,6 +43,7 @@ const MyCertifications = () => {
         <div className="cert-grid">
             {certificates.map((cert, index) => (
             <div className="cert-card" key={index}>
+              <div>
                 <img src={`/images/${cert.image}`} alt={`${cert.issuer} logo`} className="cert-image" />
                 <h3>{cert.title}</h3>
                 <div className="issuer">
@@ -48,14 +51,20 @@ const MyCertifications = () => {
                     <p className="cert-issuer">{cert.issuer}</p>
                 </div>
                 <span className="cert-date">{cert.date}</span>
-                <ul className="skills">
-                {cert.skills.map((skill, idx) => (
-                    <li key={idx}>{skill}</li>
-                ))}
-                </ul>
+                <div className="skills-container">
+                  <ul className="skills">
+                    {cert.skills.map((skill, idx) => (
+                        <li key={idx}>{skill}</li>
+                    ))}
+                  </ul>
+                  <span id="skills-gained">Skills Gained</span>
+                </div>
+              </div>
+              <div>
                 <a href={cert.link} target="_blank" rel="noopener noreferrer" className="view-btn">
                 View Credential
                 </a>
+              </div>
             </div>
             ))}
         </div>
@@ -63,4 +72,4 @@ const MyCertifications = () => {
   );
 };
 
-export default MyCertifications;
+export default MyCertificates;

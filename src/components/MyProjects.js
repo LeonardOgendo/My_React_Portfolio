@@ -4,28 +4,28 @@ const projects = [
       stack: ["React", "Django", "DRF"],
       description: "A fullstack system enabling real-time emergency reporting and swift response on campus.",
       image: "cers.png",
-      link: "https://github.com/YourUsername/emergency-response-system"
+      link: "https://github.com/LeonardOgendo/Campus-Emergency-Response-System/"
     },
     {
-      title: "E-commerce Web App",
+      title: "E-commerce Application",
       stack: ["DTL", "Django"],
       description: "A complete e-commerce solution with cart, checkout, and admin controls using Django templates.",
       image: "/ecommerce-app.jpg",
-      link: "https://github.com/YourUsername/ecommerce-web-app"
+      link: "https://github.com/LeonardOgendo/Ecommerce-Django-Web-Application/"
     },
     {
       title: "Tech Consultancy Website",
       stack: ["SCSS", "HTML", "CSS", "Bootstrap"],
       description: "A professional, responsive landing page designed for tech consultancy firms.",
       image: "consultancy.png",
-      link: "https://github.com/YourUsername/tech-consultancy-site"
+      link: "https://github.com/LeonardOgendo/Tech-Consultancy-Website/"
     },
     {
-      title: "E-Learning Web App",
+      title: "E-Learning System",
       stack: ["React", "Django"],
       description: "An e-learning platform for managing courses, enrollments, and progress tracking.",
       image: "elearning.png",
-      link: "https://github.com/YourUsername/e-learning-app"
+      link: "https://github.com/LeonardOgendo/EH-Academy-App/"
     },
     {
       title: "Betting Model App",
@@ -39,13 +39,13 @@ const projects = [
       stack: ["React", "CSS"],
       description: "This personal portfolio showcasing my development skills, projects, and more.",
       image: "portfolio.png",
-      link: "https://github.com/YourUsername/portfolio"
+      link: "https://github.com/LeonardOgendo/My_React_Portfolio/"
     }
   ];
   
   const MyProjects = () => {
     return (
-      <div className="section-body">
+      <div className="section-body" id="projects">
         <h2 className="section-title">
           <span className="white-text">My</span> <span className="highlight">Projects</span>
         </h2>
@@ -60,17 +60,21 @@ const projects = [
                     <img src={`/images/${project.image}`} alt={project.title} className="project-image" />
                 </div>
                 <div className="card-content">
+                  <div>
                     <h3 className="project-title">{project.title}</h3>
                     <p className="project-stack">{project.stack.map(techStack => (<span className="tech-s">{techStack}</span>))}</p>
                     <p className="project-description">{project.description}</p>
+                  </div>
+                  <div>
                     <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
                         View on GitHub →
                     </a>
+                  </div>
                 </div> 
             </div>
           ))}
         </div>
-        <span id="more-projects"><a href="#">... more Projects</a></span>
+        <span id="more-projects"><a href="https://github.com/LeonardOgendo/">... more Projects</a></span>
       </div>
     );
   };

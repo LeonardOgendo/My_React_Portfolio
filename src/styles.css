@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .video-background
 {
     position: relative;
@@ -284,7 +288,6 @@
     letter-spacing: 1px;
     font-size: 14px;
     margin-bottom: 25px;
-    margin-top: 4px;
 }
 #cv-download-btn
 {
@@ -305,10 +308,23 @@
     left: 45%;
     margin-top: 40px;
 }
+#linkedin-btn {
+  text-decoration: none;
+  color: #1c1c1c;
+  background: #c2c2c2;
+  padding: 4px 7px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  box-shadow: 0 0 4px 1px #f2f2f2;
+}
+
+#linkedin-btn:hover {
+  color: #fd4312;
+}
 
 /*-- Skills -- */
 
-.skills-grid {
+.services-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -316,7 +332,7 @@
     margin-top: 35px;
 }
 
-.skill-card {
+.service-card {
     flex: 1 1 calc(33.333% - 2rem);
     max-width: calc(33.333% - 2rem);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -328,23 +344,23 @@
     height: 160px;
 }
 
-.skill-card:hover {
+.service-card:hover {
     transform: translateY(-5px);
     border-color: #fd4312;
 }
 
-.skill-icon {
+.service-icon {
     font-size: 2rem;
     margin-bottom: 5px;
     color: #fd4312;
 }
 
-.skill-title {
+.service-title {
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.skill-desc {
+.service-desc {
     font-size: 0.85rem;
     color: #ccc;
 }
@@ -456,6 +472,7 @@
     flex-direction: column;
     gap: 32px;
     margin-left: 22px;
+    margin-bottom: 20px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
   
@@ -473,6 +490,9 @@
   .card-content {
     flex-basis: 35%;
     padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
   
   .project-card:hover {
@@ -516,23 +536,31 @@
   }
   
   .project-link {
-    color: #fd4312;
     text-decoration: none;
     display: inline-block;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    background: #c2c2c2;
+    color: #000;
+    border-radius: 5px;
+    padding: 3px 7px;
+    font-size: 0.9rem;
 
   }
   
   .project-link:hover {
-    text-decoration: underline;
+    color: #fd4312;
   }
   #more-projects {
-    float: right;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 22px;
   }
   #more-projects a {
     text-decoration: none;
     color: #fd4312;
+    font-weight: 500;
+  }
+  #more-projects a:hover {
+    color: #c2c2c2;
   }
 
   /*-- My Certifications --*/
@@ -540,19 +568,23 @@
   .cert-grid {
     display: grid;
     margin-left: 22px;
+    margin-top: 25px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1rem;
   }
   
   .cert-card {
     background: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
   }
   
-  .cert-card > h3 {
+  .cert-card h3 {
     font-size: 1.25rem;
     color: #b63511;
     letter-spacing: 0.5px;
@@ -593,14 +625,33 @@
     margin: 10px 0 5px 0;
   }
   
+  .skills-container {
+    position: relative;
+    border: 1px solid #777;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
   .skills {
     list-style: none;
-    padding: 0;
+    padding: 15px 7px;
     margin: 0.5rem 0;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+  #skills-gained {
+    position: absolute;
+    top: -0.6rem;
+    left: 60%;
+    transform: translateX(-50%);
+    background: #1c1c1c;
+    color: #c2c2c2;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 8px;
+    z-index: 1;
+  }
+  
   
   .skills li {
     background: #2a2a2a;
@@ -870,14 +921,14 @@
 
   /*-- Skills -- */
 
-  .skills-grid {
+  .services-grid {
     flex-wrap: wrap;
     gap: 12px;
     justify-content: center;
     margin-top: 35px;
   }
 
-  .skill-card {
+  .service-card {
     flex-basis: 50%;
     max-width: calc(50.333% - 2rem);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -890,17 +941,17 @@
   }
 
 
-  .skill-icon {
+  .service-icon {
     font-size: 1.5rem;
     margin-bottom: 5px;
   }
 
-  .skill-title {
+  .service-title {
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
 
-  .skill-desc {
+  .service-desc {
     font-size: 0.8rem;
   }
 
@@ -997,7 +1048,6 @@
   }
 
   #more-projects {
-    float: right;
     margin-top: 15px;
   }
   #more-projects a {

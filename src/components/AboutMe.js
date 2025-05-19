@@ -25,17 +25,17 @@ function AboutMe(){
                         <div className="det-1">
                             <span className="dets">Name</span><br/>
                             <span className="dets">Address</span><br/>
-                            <span className="dets">Phone Number</span><br/>
+                            <span className="dets">Phone</span><br/>
                             <span className="dets">Email:</span><br/>
                             <span className="dets">LinkedIn:</span>
 
                         </div>
                         <div>
                             <span className="dets2">: Leonard Ogendo</span><br/>
-                            <span className="dets2">: Kakamega, Kenya</span><br/>
+                            <span className="dets2">: Nairobi, Kenya</span><br/>
                             <span className="dets2">: +254 7122 27184</span><br/>
                             <span className="dets2">: ogendoleonard5@gmail.com</span>
-                            <span className="dets2">: leonard-ogendo-58ab01225</span>
+                            <span className="dets2">: <a href="https://www.linkedin.com/in/leonard-ogendo-58ab01225" id="linkedin-btn" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a></span>
                         </div>
                     </div>
                     <a href="cv-file"><button id="cv-download-btn">Download CV</button></a>
