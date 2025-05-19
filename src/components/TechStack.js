@@ -18,7 +18,7 @@ const techData = {
     { name: 'HTML5', icon: <FaHtml5 /> },
     { name: 'CSS3', icon: <FaCss3Alt /> },
     { name: 'React.js', icon: <FaReact /> },
-    { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
+    { name: 'Tailwind', icon: <SiTailwindcss /> },
     { name: 'Redux', icon: <SiRedux /> },
     { name: 'Bootstrap', icon: <FaBootstrap /> }
     
@@ -40,7 +40,7 @@ const techData = {
   "Security Tools": [
     { name: 'Burp Suite', icon: <SiBurpsuite /> },
     { name: 'Kali Linux', icon: <FaLinux /> },
-    { name: 'Vulnerability Scanners', icon: <FaBug /> },
+    { name: 'Vuln Scanners', icon: <FaBug /> },
     { name: 'Metasploit', icon: <FaSkullCrossbones /> },
     { name: 'OSINT', icon: <FaLock /> },
     { name: 'Nmap', icon: <FaNetworkWired /> }
@@ -55,11 +55,11 @@ const TechStack = () => {
   const [activeTab, setActiveTab] = useState("Code Arsenal");
 
   return (
-    <div className="tech-toolbox">
-      <h2>
+    <div className="section-body">
+      <h2 className='section-title'>
         <span style={{ color: '#fff' }}>My Tech</span> <span style={{ color: '#fd4312' }}>Toolbox</span>
       </h2>
-      <p className="stack-intro">
+      <p className="section-intro">
       Every tool I master builds a future, shaping Tech's frontier!
       </p>
 

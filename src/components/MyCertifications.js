@@ -32,9 +32,9 @@ const certificates = [
 
 const MyCertifications = () => {
   return (
-    <section className="certificates-section">
-        <h2 className="section-title"><span style={{ color: "#fff" }}>My</span> <span style={{color:'#fd4312'}}>Certificates</span></h2>
-        <p className="certifications-intro">
+    <section className="section-body" id="certifications">
+        <h2 className="section-title"><span style={{ color: "#fff" }}>My</span> <span style={{color:'#fd4312'}}>Certifications</span></h2>
+        <p className="section-intro">
           Each line of code crafted with precision—these projects embody my skillset and creativity in web development.
         </p>
       

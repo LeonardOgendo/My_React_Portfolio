@@ -49,6 +49,17 @@
   font-weight: 600;
   transition: opacity 0.5s ease;
 }
+.fa-hero-ico {
+  margin-right: 3px;
+}
+
+#hero-text-span {
+  color: #fd4312;
+  background: #534e4e;
+  padding: 0 3px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
 
 .nav-bar {
   position: fixed;
@@ -85,15 +96,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .name-box span {
   font-size: 0.9rem;
   font-weight: 500;
 }
+.name-box span:hover {
+  color: #fd4312;
+}
 .fa-ico {
   color: #fd4312;
+  border: 1px solid #777;
+  border-radius: 50%;
+  padding: 8px 8px;
+  box-shadow: 0 0 10px 0 #c2c2c2;
+}
+#fa-ico-resume {
+  padding: 8px 10.5px;
+}
+#fa-ico-about {
+  padding: 8px 9.5px;
+}
+#fa-ico-projects, #fa-ico-services {
+  padding: 9px 7.5px;
 }
 
 #name-pref
@@ -125,8 +152,12 @@
 
 .header-btns
 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 30%;
     margin-left: 115px;
-    margin-top: 40px;
+    margin-top: 60px;
     display: flex;
 }
 #view-work-btn
@@ -134,8 +165,8 @@
     background: #fd4312;
     color: #fff;
     border: none;
-    padding: 12px 25px;
-    border-radius: 20px;
+    padding: 10px 25px;
+    border-radius: 15px;
     margin-right: 15px;
     font-size: 15px;
 }
@@ -144,26 +175,43 @@
     background: #fd4312;
     color: #fff;
     border: none;
-    padding: 15px 25px;
-    border-radius: 20px;
+    padding: 10px 25px;
+    border-radius: 15px;
     font-size: 15px;
 }
 
+/* Shared Styling */
+.section-body {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  margin-left: 22px;
+}
+
+.section-intro {
+  color: #ccc;
+  font-size: 1rem;
+  margin: 10px 0 20px 22px;
+}
+
+
+
 
 /*-- AboutMe --*/
-.about-me
-{
-    min-height: 70vh;
-    width: 75%;
-    margin: 50px auto;
+#about {
+  margin-top: 60px;
 }
-.about-me h2
+.about-me-title
 {
     text-align: center;
     font-size: 2.15rem;
     margin-bottom: 15px;
 }
-.about-me p
+.about-me-p
 {
     color: #fff;
     text-align: center;
@@ -194,6 +242,7 @@
 .box2 >p
 {
     text-align: left;
+    color: #fff;
     margin-bottom: 30px;
     font-size: 14px;
     margin-top: 15px;
@@ -258,23 +307,6 @@
 }
 
 /*-- Skills -- */
-.skills-section {
-    width: 75%;
-    margin: 32px auto;
-
-    & > h2 {
-        margin-left: 22px;
-        font-size: 2.15rem;
-    }
-    & .skills-intro {
-        color: #ccc;
-        font-size: 1rem;
-        margin: 10px 0 20px 0;
-        max-width: 600px;
-        margin-left: 22px;
-    }
-    
-}
 
 .skills-grid {
     display: flex;
@@ -319,25 +351,7 @@
 
 
 /*-- Tech Stack section --*/
-.tech-toolbox {
-    width: 75%;
-    margin: 0 auto;
-    margin-top: 90px;
-    margin-bottom: 100px;
-  }
   
-  .tech-toolbox > h2 {
-    margin-left: 22px;
-    font-size: 2.15rem;
-  }
-  
-  .stack-intro {
-    margin: 10px 0 20px 22px;
-    color: #ccc;
-    font-size: 0.95rem;
-  }
-  
-
   .tab-wrapper {
     margin: 0 22px;
     border: 1px solid #fd4312;
@@ -422,17 +436,6 @@
   
 
   /*-- MyProjects section --*/
-
-  .projects-section {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 100px;
-  }
-  
-  .projects-section h2 {
-    margin-left: 22px;
-    font-size: 2.15rem;
-  }
   
   .white-text {
     color: #ffffff;
@@ -534,23 +537,6 @@
 
   /*-- My Certifications --*/
 
-  .certificates-section {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 100px;
-  }
-
-  .certifications-intro {
-    margin: 10px 0 35px 22px;
-    color: #ccc;
-    font-size: 0.95rem;
-  }
-  
-  .section-title {
-    margin-left: 22px;
-    font-size: 2.15rem;
-  }
-  
   .cert-grid {
     display: grid;
     margin-left: 22px;
@@ -719,4 +705,440 @@
   color: dodgerblue;
   margin-right: 3px;
   font-size: 20px;
+}
+
+
+/*-- Responsiveness (Smartphones) --*/
+
+@media (max-width: 767px) {
+  .nav-brand {
+    padding-left: 10px;
+  }
+  .nav-bar {
+    display: none;
+  }
+  #name-pref {
+    font-size: 1.5rem;
+  }
+  #hero-text {
+    font-size: 0.8rem;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  #cont {
+    font-size: 20px;
+    width: 100px;
+  }
+  .Developer-brf
+  {
+      position: absolute;
+      z-index: 20;
+      top: 45%;
+      left: 25%;
+      transform: translate(-50%, -30%);
+  }
+  .Developer-brf h1
+  {
+      color: #fff;
+      font-size: 20px;
+  }
+
+  .header-btns
+  {
+    position: absolute;
+    left: -7%;
+    margin-top: 30px;
+    display: flex;
+  }
+  #view-work-btn
+  {
+      background: #fd4312;
+      color: #fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 12px;
+      font-size: 14px;
+  }
+  #hire-me-btn
+  {
+      background: #fd4312;
+      padding: 10px 25px;
+      border-radius: 12px;
+      font-size: 14px;
+  }
+  .section-body {
+    width: 93%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .section-intro {
+    margin-left: 22px;
+    font-size: 0.9rem;
+  }
+  .section-title {
+    font-size: 1.85rem;
+    margin-left: 22px;
+  }
+  #about {
+    margin-top: 30px;
+  }
+  .about-me-title
+  {
+      font-size: 1.85rem;
+      margin-bottom: 10px;
+  }
+  .about-me-p
+  {
+      color: #fff;
+      text-align: center;
+      font-size: 13px;
+  }
+  .about--flexbox {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  #profile {
+    width: 90%;
+  }
+  .box2
+  {
+    margin-top: 15px;
+  }
+  .box2 >p
+  {
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    letter-spacing: 0.9px;
+    margin-left: 15px;
+  }
+  #about--hello
+  {
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 15px;
+  }
+  #about--name
+  {
+    color: #fd4312;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .about--details
+  {
+    margin-left: 22px;
+  }
+  .det-1
+  {
+    margin-right: 40px;
+  }
+  .dets
+  {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-bottom: 22px;
+    font-weight: bold;
+  }
+  .dets2
+  {
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 22px;
+    margin-top: 4px;
+  }
+  #cv-download-btn
+  {
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 22px;
+  }
+  #about--brief::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #fd4312;
+    left: 45%;
+    margin-top: 40px;
+  }
+
+  /*-- Skills -- */
+
+  .skills-grid {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 35px;
+  }
+
+  .skill-card {
+    flex-basis: 50%;
+    max-width: calc(50.333% - 2rem);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+    height: 180px;
+  }
+
+
+  .skill-icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .skill-title {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .skill-desc {
+    font-size: 0.8rem;
+  }
+
+
+  /*-- Tech Stack section --*/
+    
+  .tab-wrapper {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .tab-button {
+    border-top-right-radius: 0;
+    font-size: 0.8rem;
+    padding: 0.9rem 0.85rem;
+  }
+
+  .tab-content {
+    padding: 16px 12px;
+  }
+
+  .tech-grid {
+    gap: 12px;
+  }
+
+
+  .tech-card {
+    padding: 12px 1px;
+    width: 90px;
+  }
+
+  .tech-icon {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .tech-name {
+    font-size: 0.85rem;
+  }
+
+  /*-- MyProjects section --*/
+
+  .projects-grid {
+    display: flex;
+    gap: 32px;
+  }
+
+  .project-card {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 5px 5px 20px 5px;
+
+  }
+  .card-content {
+    padding-left: 5px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top left;
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+    margin-top: 5px;
+  }
+
+  .project-stack {
+    margin-bottom: 8px;
+    margin-top: 7px;
+  }
+  .tech-s{
+    background: #fd4312;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    border-radius: 5px;
+  }
+
+  .project-description {
+    font-size: 0.92rem;
+    margin-bottom: 1rem;
+  }
+
+  #more-projects {
+    float: right;
+    margin-top: 15px;
+  }
+  #more-projects a {
+    text-decoration: none;
+    color: #fd4312;
+  }
+
+  /*-- My Certifications --*/
+
+  .cert-grid {
+    gap: 20px;
+  }
+
+  .cert-card {
+    border-radius: 12px;
+    padding: 5px 5px 20px 5px;
+  }
+
+  .cert-card > h3 {
+    font-size: 1.15rem;
+    letter-spacing: 0.4px;
+    margin-left: 7px;
+  }
+
+  .cert-image {
+    height: 195px;
+  }
+  .issuer {
+    margin: 10px 0 10px 7px
+  }
+  .cert-issuer-logo {
+    width: 27px;
+  }
+
+  .cert-date {
+    font-size: 0.85rem;
+    margin-left: 7px;
+  }
+
+  .skills {
+    margin-left: 7px;
+  }
+
+  .view-btn {
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-left: 7px;
+  }
+
+  /*-- Contact section --*/
+
+  .contact-section {
+    padding: 30px 47px;
+  }
+  .contact-section >h2 {
+    font-size: 1.85rem;
+    margin-bottom: 15px;
+  }
+  .contact-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .slider-container {
+    width: 330px;
+  }
+  .slider-content1 img, .slider-content2 img, .slider-content3 img {
+    width: 330px;
+    height: 200px;
+    border-radius: 7px;
+  }
+
+  .social > a {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    margin-left: 4px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    padding: 0.5rem;
+  }
+
+
+  /*-- Footer --*/
+
+  .footer {
+  background: #1c1c1c;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  }
+
+  .react-icon {
+  color: dodgerblue;
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+}
+
+/*-- Responsiveness (Ipads) --*/
+
+@media (max-width: 1024px) and (min-width: 768px) {
+   
+  /*-- Contact section --*/
+
+   .contact-section {
+    padding: 30px 115px;
+  }
+  .contact-section >h2 {
+    font-size: 2rem;
+  }
+  .slider-container {
+    width: 350px;
+  }
+  .slider-content1 img, .slider-content2 img, .slider-content3 img {
+    width: 350px;
+    height: 250px;
+  }
+  
+  .contact-form {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.55rem;
+    font-size: 1rem;
+  }
+  
 }

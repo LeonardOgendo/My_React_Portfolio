@@ -2,7 +2,7 @@ import { FaCode, FaLaptopCode, FaShieldAlt, FaBug, FaDatabase, FaCogs, FaLock, F
 
 const Skills = () => {
     const mySkills = [
-        { icon: <FaCode />, title: "Web Application Development", desc: "Build secure, scalable web apps." },
+        { icon: <FaCode />, title: "Web Development", desc: "Build secure, scalable web apps." },
         { icon: <FaPaintBrush />, title: "Web Design", desc: "Modern, clean UI and UX." },
         { icon: <FaShieldAlt />, title: "Ethical Hacking", desc: "Legal security testing for systems." },
         { icon: <FaBug />, title: "Penetration Testing", desc: "Identify and fix system vulnerabilities." },
@@ -13,9 +13,9 @@ const Skills = () => {
         { icon: <FaDatabase />, title: "Database Management", desc: "Organize, store, and manage data." },
     ];
     return (
-        <div className="skills-section">
-            <h2><span style={{color: '#fff'}}>My</span> <span style={{color:'#fd4312'}}>Skills</span></h2>
-            <p className="skills-intro">
+        <div className="section-body">
+            <h2 className='section-title'><span style={{color: '#fff'}}>My</span> <span style={{color:'#fd4312'}}>Skills</span></h2>
+            <p className="section-intro">
                 Every line of code I write, strengthens both function and protection.
             </p>
             

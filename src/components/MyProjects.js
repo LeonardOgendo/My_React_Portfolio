@@ -45,11 +45,11 @@ const projects = [
   
   const MyProjects = () => {
     return (
-      <div className="projects-section">
-        <h2>
+      <div className="section-body">
+        <h2 className="section-title">
           <span className="white-text">My</span> <span className="highlight">Projects</span>
         </h2>
-        <p className="projects-intro">
+        <p className="section-intro">
           Each line of code crafted with precision—these projects embody my skillset and creativity in web development.
         </p>
   
