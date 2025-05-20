@@ -7,10 +7,10 @@ import TypewriterEffect from "./TypewriterEffect";
 
 function Navigation(){
     const texts = [
-        'Leonard Ogendo',
-        'a Fullstack Developer',
-        'a Cybersecurity Professional',
-        'an Ethical Hacker'
+        "I Am Leonard Ogendo",
+        'I Am a Fullstack Developer',
+        'I Am a Cybersecurity Professional',
+        'I Am an Ethical Hacker'
     ]
 
     // For Responsiveness and dynamic display
@@ -71,11 +71,11 @@ function Navigation(){
                 <div className="gradient-overlay"></div>
                 
                 <div className={scrolled ? "nav-brand scrolled-nav" : "nav-brand" } >
-                    <span id="name-pref">Leon</span>
+                    <span id="name-pref"><a style={{ textDecoration: "none", color: "#fd4312" }} href="#home">Leon</a></span>
                     {isVisible && <span id="hero-text"><FontAwesomeIcon icon={faUserShield} className="fa-hero-ico" />Developing and <span id="hero-text-span">Securing Systems</span></span>}
                 </div>
                 <div className="Developer-brf">
-                    <h1>I Am <span id="cont"><TypewriterEffect texts={texts} speed={100} pause={1500} /></span></h1>
+                    <h1><span id="cont"><TypewriterEffect texts={texts} speed={100} pause={1500} /></span></h1>
                 </div>
                 <div className="header-btns">
                     <a href="#projects"><button id="view-work-btn">View Work</button></a>

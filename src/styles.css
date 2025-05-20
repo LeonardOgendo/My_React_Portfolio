@@ -152,6 +152,17 @@ html {
     color: #fff;
     font-size: 35px;
 }
+.typewriter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50px;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
 
 .header-btns
 {
@@ -861,13 +872,16 @@ html {
       position: absolute;
       z-index: 20;
       top: 45%;
-      left: 25%;
+      left: 50%;
       transform: translate(-50%, -30%);
   }
   .Developer-brf h1
   {
       color: #fff;
       font-size: 20px;
+  }
+  .typewriter-container {
+    font-size: 1.25rem;
   }
 
   .nav-toggler-container {
@@ -1194,11 +1208,12 @@ html {
     flex-direction: column;
   }
   .slider-container {
-    width: 330px;
+    width: 100%;
+    margin: 0 auto;
   }
   .slider-content1 img, .slider-content2 img, .slider-content3 img {
-    width: 330px;
-    height: 200px;
+    width: 100%;
+    height: 170px;
     border-radius: 7px;
   }
 

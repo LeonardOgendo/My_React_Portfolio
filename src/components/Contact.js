@@ -36,8 +36,8 @@ const Contact = () => {
 
             <div className="social">
               <p>Or directly on: </p>
-              <a href="#"><FaLinkedin /></a>
-              <a href="#"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/leonard-ogendo-58ab01225" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+              <a href="https://github.com/LeonardOgendo/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             </div>
         </div>
         <form ref={form} onSubmit={sendEmail} className="contact-form">

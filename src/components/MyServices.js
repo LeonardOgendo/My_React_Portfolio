@@ -10,7 +10,7 @@ const MyServices = () => {
         { icon: <FaBug />, title: "Penetration Testing", desc: "Identify and fix system vulnerabilities." },
         { icon: <FaDatabase />, title: "Database Management", desc: "Organize, store, and manage data." },
         { icon: <FaNetworkWired />, title: "API Integration", desc: "Connect systems using secure APIs." },
-        { icon: <FaLock />, title: "DevOps & Deployment", desc: "Automate deployment and streamline development cycles." },
+        { icon: <FaLock />, title: "DevOps & Deployment", desc: "Deployment & streamlining development cycles." },
     ];
     return (
         <div className="section-body" id="services">
