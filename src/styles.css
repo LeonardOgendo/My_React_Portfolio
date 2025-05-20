@@ -759,15 +759,39 @@ html {
 }
 
 
+.nav-toggler-container {
+  position: fixed;
+  top: 30%;
+  left: -5px;
+  z-index: 9999;
+  background-color: #fd4312;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: none;
+}
+
+#fa-toggler {
+  color: #fff;
+}
+
 /*-- Responsiveness (Smartphones) --*/
 
 @media (max-width: 767px) {
   .nav-brand {
     padding-left: 10px;
   }
-  .nav-bar {
-    display: none;
+  .scrolled-nav {
+    position: fixed;
+    top: 0;
+    background: #1c1c1c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
   }
+
   #name-pref {
     font-size: 1.5rem;
   }
@@ -775,6 +799,9 @@ html {
     font-size: 0.8rem;
     padding-top: 10px;
     padding-right: 10px;
+  }
+  #hero-text-span {
+    color: #fd4312;
   }
   #cont {
     font-size: 20px;
@@ -792,6 +819,11 @@ html {
   {
       color: #fff;
       font-size: 20px;
+  }
+
+  .nav-toggler-container {
+    display: block;
+    padding: 5px 10px;
   }
 
   .header-btns
@@ -817,6 +849,8 @@ html {
       border-radius: 12px;
       font-size: 14px;
   }
+
+
   .section-body {
     width: 93%;
     margin: 0 auto;

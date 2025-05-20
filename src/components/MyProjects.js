@@ -4,42 +4,48 @@ const projects = [
       stack: ["React", "Django", "DRF"],
       description: "A fullstack system enabling real-time emergency reporting and swift response on campus.",
       image: "cers.png",
-      link: "https://github.com/LeonardOgendo/Campus-Emergency-Response-System/"
+      link: "https://github.com/LeonardOgendo/Campus-Emergency-Response-System/",
+      hosted: false,
     },
     {
       title: "E-commerce Application",
       stack: ["DTL", "Django"],
       description: "A complete e-commerce solution with cart, checkout, and admin controls using Django templates.",
-      image: "/ecommerce-app.jpg",
-      link: "https://github.com/LeonardOgendo/Ecommerce-Django-Web-Application/"
+      image: "ecommerce.png",
+      link: "https://github.com/LeonardOgendo/Ecommerce-Django-Web-Application/",
+      hosted: false,
     },
     {
       title: "Tech Consultancy Website",
       stack: ["SCSS", "HTML", "CSS", "Bootstrap"],
       description: "A professional, responsive landing page designed for tech consultancy firms.",
       image: "consultancy.png",
-      link: "https://github.com/LeonardOgendo/Tech-Consultancy-Website/"
+      link: "https://amden.co.ke/",
+      hosted: true,
     },
     {
       title: "E-Learning System",
       stack: ["React", "Django"],
       description: "An e-learning platform for managing courses, enrollments, and progress tracking.",
       image: "elearning.png",
-      link: "https://github.com/LeonardOgendo/EH-Academy-App/"
+      link: "https://github.com/LeonardOgendo/EH-Academy-App/",
+      hosted: false,
     },
     {
       title: "Betting Model App",
       stack: ['In design'],
       description: "A machine learning-powered platform for football prediction and analytics.",
       image: "bettin_model.jpeg",
-      link: "#"
+      link: "#",
+      hosted: false,
     },
     {
       title: "Portfolio Website",
       stack: ["React", "CSS"],
       description: "This personal portfolio showcasing my development skills, projects, and more.",
       image: "portfolio.png",
-      link: "https://github.com/LeonardOgendo/My_React_Portfolio/"
+      link: "https://github.com/LeonardOgendo/My_React_Portfolio/",
+      hosted: true,
     }
   ];
   
@@ -67,7 +73,7 @@ const projects = [
                   </div>
                   <div>
                     <a href={project.link} className="project-link" target="_blank" rel="noopener noreferrer">
-                        View on GitHub →
+                      {project.hosted ? "Visit Site →" : "View on GitHub →"}
                     </a>
                   </div>
                 </div> 

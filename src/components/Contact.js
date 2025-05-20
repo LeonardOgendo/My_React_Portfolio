@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ImageSlider from "./ImageSlider";
-import { FaEnvelope, FaLinkedin, FaTwitter, FaXTwitter } from 'react-icons/fa';
+import {  FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   const form = useRef();
@@ -10,10 +10,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "your_service_id",     // Replace with your EmailJS service ID
-        "your_template_id",    // Replace with your EmailJS template ID
+        "service_zck1xkp",     // Replace with your EmailJS service ID
+        "template_w40hp2o",    // Replace with your EmailJS template ID
         form.current,
-        "your_user_public_key" // Replace with your public key
+        "dlBp6sQi_QMyXsOWn" // Replace with your public key
       )
       .then(
         (result) => {
@@ -37,12 +37,12 @@ const Contact = () => {
             <div className="social">
               <p>Or directly on: </p>
               <a href="#"><FaLinkedin /></a>
-              <a href="#"><FaTwitter /></a>
+              <a href="#"><FaGithub /></a>
             </div>
         </div>
         <form ref={form} onSubmit={sendEmail} className="contact-form">
-            <input type="text" name="user_name" placeholder="Your Name" required />
-            <input type="email" name="user_email" placeholder="Your Email" required />
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email (For Reply)" required />
             <textarea name="message" placeholder="Your Message" rows="5" required />
             <button type="submit">Send Message</button>
         </form>
