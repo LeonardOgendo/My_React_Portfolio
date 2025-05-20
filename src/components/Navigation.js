@@ -58,6 +58,9 @@ function Navigation(){
     const toggleMenu = () => {
         setMenuUp(prev => !prev);
     }
+    setTimeout(() => {
+        setMenuUp(false);
+    }, 3000);
     
     return(
         <nav id="home">
@@ -78,9 +81,12 @@ function Navigation(){
                     <a href="#projects"><button id="view-work-btn">View Work</button></a>
                     <a href="#contact"><button id="hire-me-btn">Hire Me</button></a>
                 </div>
-                <div className="nav-toggler-container" onClick={toggleMenu}>
-                    <FontAwesomeIcon icon={faBars} id="fa-toggler" />
-                </div>
+
+                {!menuUp && (
+                    <div className="nav-toggler-container" onClick={toggleMenu}>
+                        <FontAwesomeIcon icon={faBars} id="fa-toggler" />
+                    </div>  
+                )}       
                 
             </div>
             
