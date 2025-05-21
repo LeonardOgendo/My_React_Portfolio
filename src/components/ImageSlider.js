@@ -9,14 +9,34 @@ const ImageSlider = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
   };
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="slider-content1"><img src="/images/web_dev1.jpeg" alt="Slider 1" /></div>
-        <div className="slider-content2"><img src="/images/code_sec2.jpeg" alt="Slider 2" /></div>
-        <div className="slider-content3"><img src="/images/sols_through_code.jpeg" alt="Slider 3" /></div>
+        <div className="slider-content1">
+            <img src="/images/web_dev1.jpeg" alt="Slider 1" />
+          <div className="text-overlay">
+            <span id="t-1">Crafting Web Experience that Inspire</span>
+          </div>
+          <div className="gradient-overlay2"></div>
+        </div>
+        <div className="slider-content2">
+          <img src="/images/code_sec2.jpeg" alt="Slider 2" />
+          <div className="text-overlay">
+            <span id="t-2">Security at Every Line of Code</span>
+          </div>
+          <div className="gradient-overlay2"></div>
+        </div>
+        <div className="slider-content3">
+          <img src="/images/sols_through_code.jpeg" alt="Slider 3" />
+          <div className="text-overlay">
+            <span id="t-3">Solving Real Problems Through Code</span>
+          </div>
+          <div className="gradient-overlay2"></div>
+        </div>
       </Slider>
     </div>
   );

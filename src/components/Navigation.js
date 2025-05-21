@@ -10,19 +10,19 @@ function Navigation(){
         "I Am Leonard Ogendo",
         'I Am a Fullstack Developer',
         'I Am a Cybersecurity Professional',
-        'I Am an Ethical Hacker'
+        'I Am a Penetration Tester'
     ]
 
     // For Responsiveness and dynamic display
     const [isVisible, setIsVisible] = useState(true);
     const [scrolled, setScrolled] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollY = window.scrollY;
-            const isMobile = window.innerWidth <= 767;
+            const isMobile = window.innerWidth <= 1024;
 
             if (isMobile) {
                 setScrolled(scrollY >= 5);
@@ -42,7 +42,7 @@ function Navigation(){
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 767);
+            setIsMobile(window.innerWidth <= 1024);
         };
     
         window.addEventListener('resize', handleResize);

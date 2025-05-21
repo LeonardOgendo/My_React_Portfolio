@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import profilePhoto from '../myphoto.jpg';
 
 function AboutMe(){
+    const [isSmartphone, setIsSmartphone] = useState(window.innerWidth <= 767);
+
+    useEffect(() => {
+            const handleResize = () => {
+                setIsSmartphone(window.innerWidth <= 767);
+            };
+        
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+
     return(
         <div className="section-body" id="about">
             <h2 className="about-me-title"><span style={{color: '#fff'}}>About</span> <span style={{color:'#fd4312'}}>Me</span></h2>
-            <p className="about-me-p">Experienced full stack developer and ethical hacker specializing in <br/>creating and securing 
+            {!isSmartphone && <p className="about-me-p">Experienced Full Stack Developer and Penetration Tester specializing in <br/>creating and securing 
                 robust, innovative web applications.
-            </p>
+            </p>}
+            {isSmartphone && <p className="about-me-p">Experienced Full Stack Developer and Penetration Tester specializing in creating and securing 
+                robust, innovative web applications.
+            </p>}
             <div className="about--flexbox">
                 <div className="box1">
                     <img id="profile" src={profilePhoto} alt="my-Profile"/>
@@ -15,8 +30,8 @@ function AboutMe(){
                 <div className="box2">
                     <span id="about--hello">Hello, I Am </span><span id="about--name">Leonard Ogendo</span>
                     <p className="box2-p">
-                        As a seasoned full stack web application developer and ethical hacker, i bring a unique blend of expertise in building robust web applications and securing against evolving cyber threats. With a passion for both creating innovative digital
-                        solutions and protecting them, i leverage my extensive knowledge in front-end and back-end development, alongside
+                        As a seasoned Full Stack Web Application Developer and Penetration Tester, I bring a unique blend of expertise in building robust web applications and securing against evolving cyber threats. With a passion for both creating innovative digital
+                        solutions and protecting them, I leverage my extensive knowledge in front-end and back-end development, alongside
                         advanced cybersecurity techniques, to deliver secure, efficient, and scalable web applications. My commitment to 
                         staying at the forefront of technology ensures that i'm always ready to tackle new challenges and provide
                         top-tier solutions for my client.

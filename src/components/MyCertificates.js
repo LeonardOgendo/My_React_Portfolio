@@ -37,17 +37,17 @@ const MyCertificates = () => {
     <section className="section-body" id="certifications">
         <h2 className="section-title"><span style={{ color: "#fff" }}>My</span> <span style={{color:'#fd4312'}}>Certificates</span></h2>
         <p className="section-intro">
-          Each line of code crafted with precision—these projects embody my skillset and creativity in web development.
+          Each certification strengthens my skills for real-world Tech challenges ahead.
         </p>
       
         <div className="cert-grid">
             {certificates.map((cert, index) => (
             <div className="cert-card" key={index}>
               <div>
-                <img src={`/images/${cert.image}`} alt={`${cert.issuer} logo`} className="cert-image" />
+                <img src={`/images/${cert.image}`} className="cert-image" alt="cert-im" />
                 <h3>{cert.title}</h3>
                 <div className="issuer">
-                    <img className="cert-issuer-logo" src={`/images/${cert.issuerLogo}`} />
+                    <img className="cert-issuer-logo" src={`/images/${cert.issuerLogo}`} alt={cert.issuer} />
                     <p className="cert-issuer">{cert.issuer}</p>
                 </div>
                 <span className="cert-date">{cert.date}</span>

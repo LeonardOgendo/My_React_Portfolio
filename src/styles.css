@@ -751,6 +751,34 @@ html {
     font-size: 1rem;
     cursor: pointer;
   }
+
+  .slider-content1, .slider-content2, .slider-content3 {
+    position: relative;
+  }
+  .text-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 55%;
+    left: 10%;
+    color: #fff;
+    font-weight: bold;
+    z-index: 999;
+    font-size: 0.9rem;
+  
+  }
+  .gradient-overlay2
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(10deg, rgba(63, 61, 61, 0.6), rgba(165, 164, 164, 0.5));
+
+  }
   
 
 /*-- Footer --*/
@@ -881,7 +909,7 @@ html {
       font-size: 20px;
   }
   .typewriter-container {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
 
   .nav-toggler-container {
@@ -898,20 +926,16 @@ html {
   }
   #view-work-btn
   {
-      background: #fd4312;
-      color: #fff;
-      border: none;
-      padding: 10px 25px;
+      padding: 9px 20px;
       border-radius: 12px;
-      font-size: 14px;
+      font-size: 0.9rem;
   }
   #hire-me-btn
   {
-      background: #fd4312;
-      padding: 10px 25px;
-      border-radius: 12px;
-      font-size: 14px;
-  }
+    padding: 9px 20px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
 
 
   .section-body {
@@ -939,7 +963,7 @@ html {
   {
       color: #fff;
       text-align: center;
-      font-size: 13px;
+      font-size: 0.8rem;
   }
   .about--flexbox {
     flex-direction: column;
@@ -964,14 +988,12 @@ html {
   {
     color: #fff;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-left: 15px;
   }
   #about--name
   {
-    color: #fd4312;
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 1.375rem;
   }
   .about--details
   {
@@ -983,40 +1005,24 @@ html {
   }
   .dets
   {
-    display: inline-block;
-    color: #fff;
-    letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 0.8rem;
     margin-bottom: 22px;
-    font-weight: bold;
   }
   .dets2
   {
-    display: inline-block;
-    color: #fff;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-bottom: 22px;
-    margin-top: 4px;
   }
   #cv-download-btn
   {
-    padding: 12px 15px;
-    border-radius: 10px;
+    padding: 7px 15px;
+    border-radius: 7px;
     margin-top: 25px;
     margin-left: 22px;
   }
-  #about--brief::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 2px;
-    background-color: #fd4312;
-    left: 45%;
-    margin-top: 40px;
-  }
 
-  /*-- Skills -- */
+  /*-- My Services -- */
 
   .services-grid {
     flex-wrap: wrap;
@@ -1107,7 +1113,7 @@ html {
     display: flex;
     flex-direction: column;
     border-radius: 7px;
-    padding: 5px 5px 20px 5px;
+    padding: 7px 7px 20px 7px;
 
   }
   .card-content {
@@ -1116,9 +1122,8 @@ html {
 
   .project-image {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: top left;
+    height: 180px;
+    object-fit: inherit;
   }
 
   .project-title {
@@ -1140,8 +1145,13 @@ html {
   }
 
   .project-description {
-    font-size: 0.92rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
+  }
+  .project-link {
+    padding: 5px 7px;
+    font-size: 0.85rem;
+
   }
 
   #more-projects {
@@ -1160,7 +1170,7 @@ html {
 
   .cert-card {
     border-radius: 12px;
-    padding: 5px 5px 20px 5px;
+    padding: 7px 7px 20px 7px;
   }
 
   .cert-card > h3 {
@@ -1184,7 +1194,7 @@ html {
     margin-left: 7px;
   }
 
-  .skills {
+  .skills-container {
     margin-left: 7px;
   }
 
@@ -1211,6 +1221,7 @@ html {
     width: 100%;
     margin: 0 auto;
   }
+  
   .slider-content1 img, .slider-content2 img, .slider-content3 img {
     width: 100%;
     height: 170px;
@@ -1261,7 +1272,72 @@ html {
 /*-- Responsiveness (Ipads) --*/
 
 @media (max-width: 1024px) and (min-width: 768px) {
-   
+  /*-- Navigation --*/
+  
+  .nav-brand {
+    padding-top: 20px;
+    padding-left: 0.94rem;
+  }
+  
+  .nav-bar {
+    position: fixed;
+    top: 6.25rem;
+    margin-top: 50px;
+    padding: 15px;
+  }
+  .scrolled-nav {
+    position: fixed;
+    top: 0;
+    background: #1c1c1c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+  }
+  
+  #name-pref
+  {
+      font-size: 1.9rem;
+  }
+  #cont
+  {
+      font-size: 1.875rem;
+      width: 25rem;
+  }
+  .Developer-brf
+  {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+  }
+
+  .nav-toggler-container {
+    display: block;
+    padding: 7px 12px;
+  }
+
+
+  /* Shared Styling */
+  .section-body {
+    width: 85%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+
+  /*-- My Certificates --*/
+
+  .cert-image {
+    width: 100%;
+    height: 215px;
+  }
+
+
   /*-- Contact section --*/
 
    .contact-section {
