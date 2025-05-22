@@ -53,7 +53,7 @@ function AboutMe(){
                             <span className="dets2">: <a href="https://www.linkedin.com/in/leonard-ogendo-58ab01225" id="linkedin-btn" target="_blank" rel="noopener noreferrer">View LinkedIn Profile</a></span>
                         </div>
                     </div>
-                    <a href="cv-file"><button id="cv-download-btn">Download CV</button></a>
+                    <a href="https://drive.google.com/file/d/1ts-7k2v23eJ5LAGLBA8RwIscfnBD-6b1/view?usp=sharing" target="_blank" rel="noopener noreferrer" ><button id="cv-download-btn">Download CV</button></a>
                    
                 </div>
             </div>
