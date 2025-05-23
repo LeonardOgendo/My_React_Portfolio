@@ -58,9 +58,14 @@ function Navigation(){
     const toggleMenu = () => {
         setMenuUp(prev => !prev);
     }
-    setTimeout(() => {
-        setMenuUp(false);
-    }, 3000);
+    useEffect(() => {
+        if (menuUp) {
+            const timeoutId = setTimeout(() => {
+                setMenuUp(false);
+            }, 3500);
+    
+            return () => clearTimeout(timeoutId);         }
+    }, [menuUp]);
     
     return(
         <nav id="home">
@@ -91,7 +96,7 @@ function Navigation(){
             </div>
             
             {(isMobile && menuUp) || !isMobile ? (
-                <div className="nav-bar">
+                <div className={"nav-bar"}>
                     <ul>
                         <li>
                         <a href="#home" className="nav-link">
