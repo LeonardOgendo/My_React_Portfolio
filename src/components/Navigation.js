@@ -9,7 +9,7 @@ function Navigation(){
     const texts = [
         "I Am Leonard Ogendo",
         'I Am a Fullstack Developer',
-        'I Am a Cybersecurity Professional',
+        'I Am a Cybersecurity Expert',
         'I Am a Penetration Tester'
     ]
 

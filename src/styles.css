@@ -240,7 +240,7 @@ html {
 #profile
 {
     width: 85%;
-    filter: grayscale(110%);
+    filter: grayscale(85%);
     border: 2px solid #777;
     padding: 10px;
     margin-left: 20px;
@@ -796,6 +796,13 @@ html {
   font-size: 20px;
 }
 
+#react-hero {
+  color: #c2c2c2; 
+  font-size: 1.25rem; 
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
 
 .nav-toggler-container {
   position: fixed;
@@ -884,7 +891,7 @@ html {
     font-size: 1.5rem;
   }
   #hero-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding-top: 10px;
     padding-right: 10px;
   }
@@ -917,24 +924,28 @@ html {
     padding: 5px 10px;
   }
 
-  .header-btns
-  {
+  .header-btns {
     position: absolute;
-    left: -7%;
-    margin-top: 30px;
+    z-index: 1;
+    top: 40%;
+    left: 19%;
+    transform: translateX(-50%);
     display: flex;
   }
+  
   #view-work-btn
   {
-      padding: 9px 20px;
+      padding: 9px 12px;
       border-radius: 12px;
       font-size: 0.9rem;
+      white-space: nowrap;
   }
   #hire-me-btn
   {
-    padding: 9px 20px;
+    padding: 9px 12px;
     border-radius: 12px;
     font-size: 0.9rem;
+    white-space: nowrap;
 }
 
 
@@ -963,7 +974,7 @@ html {
   {
       color: #fff;
       text-align: center;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
   }
   .about--flexbox {
     flex-direction: column;
@@ -988,12 +999,12 @@ html {
   {
     color: #fff;
     font-weight: bold;
-    font-size: 1.375rem;
+    font-size: 1.275rem;
     margin-left: 15px;
   }
   #about--name
   {
-    font-size: 1.375rem;
+    font-size: 1.275rem;
   }
   .about--details
   {
@@ -1001,7 +1012,7 @@ html {
   }
   .det-1
   {
-    margin-right: 40px;
+    margin-right: 17px;
   }
   .dets
   {
@@ -1013,6 +1024,12 @@ html {
     letter-spacing: 1px;
     font-size: 0.8rem;
     margin-bottom: 22px;
+  }
+
+  #linkedin-btn {
+    border-radius: 5px;
+    font-size: 0.82rem;
+    box-shadow: 0 0 4px 1px #f2f2f2;
   }
   #cv-download-btn
   {
@@ -1026,21 +1043,16 @@ html {
 
   .services-grid {
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
     margin-top: 35px;
   }
 
   .service-card {
-    flex-basis: 50%;
     max-width: calc(50.333% - 2rem);
-    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 15px 20px;
     border-radius: 12px;
-    text-align: center;
-    color: white;
-    transition: transform 0.3s ease;
-    height: 180px;
+    height: auto;
   }
 
 
@@ -1050,19 +1062,19 @@ html {
   }
 
   .service-title {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-bottom: 5px;
   }
 
   .service-desc {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
 
   /*-- Tech Stack section --*/
     
   .tab-wrapper {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
   }
 
@@ -1074,16 +1086,16 @@ html {
 
   .tab-button {
     border-top-right-radius: 0;
-    font-size: 0.8rem;
-    padding: 0.9rem 0.85rem;
+    font-size: 0.7rem;
+    padding: 0.9rem 0.5rem;
   }
 
   .tab-content {
-    padding: 16px 12px;
+    padding: 16px 5px;
   }
 
   .tech-grid {
-    gap: 12px;
+    gap: 10px;
   }
 
 
@@ -1093,7 +1105,7 @@ html {
   }
 
   .tech-icon {
-    font-size: 25px;
+    font-size: 24px;
     margin-bottom: 5px;
   }
 
@@ -1262,10 +1274,16 @@ html {
   }
 
   .react-icon {
-  color: dodgerblue;
-  margin-right: 3px;
-  font-size: 20px;
-}
+    color: dodgerblue;
+    margin-right: 3px;
+    font-size: 20px;
+  }
+
+
+  #react-hero {
+    font-size: 1.15rem; 
+    letter-spacing: 0.5px;
+  }
 
 }
 
@@ -1364,5 +1382,5 @@ html {
     padding: 0.55rem;
     font-size: 1rem;
   }
-  
+    
 }
