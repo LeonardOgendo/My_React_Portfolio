@@ -182,7 +182,7 @@ html {
     padding: 10px 25px;
     border-radius: 15px;
     margin-right: 15px;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 #hire-me-btn
 {
@@ -191,7 +191,7 @@ html {
     border: none;
     padding: 10px 25px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 /* Shared Styling */
@@ -240,7 +240,7 @@ html {
 #profile
 {
     width: 85%;
-    filter: grayscale(85%);
+    filter: grayscale(50%);
     border: 2px solid #777;
     padding: 10px;
     margin-left: 20px;
@@ -803,6 +803,12 @@ html {
   letter-spacing: 0.5px;
 }
 
+#copyright {
+  margin-top: 15px;
+  display: inline-block;
+  color: #777;
+  font-size: 0.7rem;
+}
 
 .nav-toggler-container {
   position: fixed;
@@ -935,16 +941,16 @@ html {
   
   #view-work-btn
   {
-      padding: 9px 12px;
+      padding: 7px 12px;
       border-radius: 12px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       white-space: nowrap;
   }
   #hire-me-btn
   {
-    padding: 9px 12px;
+    padding: 7px 12px;
     border-radius: 12px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     white-space: nowrap;
 }
 
@@ -1091,7 +1097,7 @@ html {
   }
 
   .tab-content {
-    padding: 16px 5px;
+    padding: 16px 2px 16px 15px;
   }
 
   .tech-grid {
@@ -1100,8 +1106,8 @@ html {
 
 
   .tech-card {
-    padding: 12px 1px;
-    width: 90px;
+    padding: 10px 1px;
+    width: 80px;
   }
 
   .tech-icon {
@@ -1110,7 +1116,7 @@ html {
   }
 
   .tech-name {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   /*-- MyProjects section --*/
